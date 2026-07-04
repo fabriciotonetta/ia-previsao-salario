@@ -7,4 +7,6 @@ jupyter
 fastapi
 uvicorn
 joblib
-pydantic
+pydantic 
+pytest
+httpx
