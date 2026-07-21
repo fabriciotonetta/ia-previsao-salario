@@ -2,6 +2,13 @@
 
 Sistema de previsão de salário para profissionais de TI, construído com base em dados reais da Stack Overflow Developer Survey 2024. O projeto cobre o fluxo completo de um produto de dados: coleta e limpeza de dados, comparação de modelos de Machine Learning, API REST documentada, testes automatizados e integração contínua.
 
+<p align="center">
+  <img src="documentos/prints/swagger-docs.png" width="480" alt="Documentação interativa da API (Swagger) com os endpoints /health e /predict" />
+  <img src="documentos/prints/predict-response.png" width="480" alt="Resposta da API prevendo salário anual de USD 31.182,56 para um perfil de teste" />
+</p>
+
+> ☝️ Prints reais da API rodando: documentação automática via Swagger e uma chamada de teste ao `/predict` retornando a previsão de salário.
+
 ---
 
 ## 📌 Sobre o projeto
@@ -167,7 +174,16 @@ A aplicação foi validada em ambiente containerizado (Docker) e está pronta pa
 
 ---
 
+## 🚀 Melhorias futuras
+
+- Reativar o deploy público assim que houver uma plataforma gratuita sem exigência de cartão de crédito, ou avaliar um plano pago simples (Render, Railway, Fly.io)
+- Incorporar dados de edições anteriores da Stack Overflow Survey para aumentar o volume de treino e testar estabilidade do modelo ano a ano
+- Testar modelos adicionais (XGBoost, LightGBM) para ver se superam o Gradient Boosting atual
+- Adicionar monitoramento de model drift caso a API volte a ficar pública em produção
+- Interface web simples (Streamlit) como alternativa à API para uso não técnico
+
+---
+
 ## 👤 Autor
 
 Fabricio Tonetta
-
